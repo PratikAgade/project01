@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# Budget Calculator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A clean, modern budget calculator web application built with React that helps you track your expenses, income, borrowings, and lendings all in one place.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Track Multiple Transaction Types**:
+  - Expenses: Record your everyday spending
+  - Income: Keep track of your earnings
+  - Borrowings: Log money you've borrowed from others
+  - Lendings: Track money you've lent to others
 
-### `npm start`
+- **Dashboard**: View a summary of your financial situation with totals for each transaction type and a current balance.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Transaction Management**:
+  - Add transactions with descriptions, categories, and amounts
+  - Filter transactions by type
+  - View transaction history chronologically
+  - Delete transactions as needed
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Offline Functionality**: All data is stored locally in your browser, making it usable without an internet connection.
 
-### `npm test`
+## How to Use
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Add a Transaction**:
+   - Select transaction type (Expense, Income, Borrowed, Lent)
+   - Enter amount and description
+   - Select a category
+   - For borrowings and lendings, enter a contact name
+   - Add optional notes if needed
+   - Click "Add Transaction"
 
-### `npm run build`
+2. **View Your Financial Summary**:
+   - The dashboard displays total income, expenses, borrowed amounts, and lent amounts
+   - See your current balance calculated from all transactions
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Manage Transactions**:
+   - View all transactions in the transaction history table
+   - Filter transactions by type
+   - Delete unwanted transactions
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technical Details
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This project was built using:
+- React.js
+- JavaScript (ES6+)
+- HTML5
+- CSS3
 
-### `npm run eject`
+Data persistence is achieved through browser's localStorage.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Getting Started
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To run this project locally:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Start the development server: `npm start`
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Future Enhancements
 
-## Learn More
+Potential future improvements:
+- Data export/import functionality
+- Budget setting and tracking
+- Charts and visual analytics
+- Dark/light theme options
+- Categories management
+- Recurring transactions
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is open source and available under the MIT License.

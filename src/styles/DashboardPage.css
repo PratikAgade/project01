@@ -1,0 +1,49 @@
+.dashboard-page {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.dashboard-title {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.dashboard-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  border-radius: 3px;
+}
+
+.dashboard-section {
+  margin-bottom: 20px;
+}
+
+.calculator-section {
+  margin-top: 20px;
+}
+
+@media (min-width: 992px) {
+  .dashboard-page {
+    flex-direction: row;
+  }
+  
+  .dashboard-section {
+    flex: 2;
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+  
+  .calculator-section {
+    flex: 1;
+    margin-top: 0;
+  }
+} 
