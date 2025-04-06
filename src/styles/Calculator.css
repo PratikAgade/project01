@@ -1,0 +1,79 @@
+.calculator {
+  background: var(--card-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.calculator h2 {
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.calculator-display {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius);
+  padding: 15px;
+  font-size: 1.8rem;
+  text-align: right;
+  margin-bottom: 15px;
+  font-family: monospace;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.calculator-keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.calculator-key {
+  background: #f0f0f0;
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.calculator-key:hover {
+  background: #e0e0e0;
+}
+
+.calculator-key:active {
+  transform: translateY(2px);
+}
+
+.calculator-key.operator {
+  background: var(--primary-color);
+  color: white;
+}
+
+.calculator-key.operator:hover {
+  background: var(--secondary-color);
+}
+
+.calculator-key.equals {
+  background: #4caf50;
+  color: white;
+  grid-column: span 2;
+}
+
+.calculator-key.equals:hover {
+  background: #45a049;
+}
+
+.calculator-key.clear {
+  background: var(--accent-color);
+  color: white;
+}
+
+.calculator-key.clear:hover {
+  background: #ff4f4f;
+} 

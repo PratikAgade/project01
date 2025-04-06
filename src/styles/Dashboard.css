@@ -1,0 +1,156 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.summary-card {
+  border-radius: var(--border-radius);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: var(--box-shadow);
+  background: var(--card-color);
+  transition: var(--transition);
+}
+
+.summary-card:hover {
+  transform: translateY(-3px);
+}
+
+.summary-card.income {
+  border-top: 3px solid #4caf50;
+}
+
+.summary-card.expense {
+  border-top: 3px solid #f44336;
+}
+
+.summary-card.borrowed {
+  border-top: 3px solid #9c27b0;
+}
+
+.summary-card.lent {
+  border-top: 3px solid #ff9800;
+}
+
+.summary-card h3 {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.summary-card .amount {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.recent-transactions {
+  background: var(--card-color);
+  border-radius: var(--border-radius);
+  padding: 20px;
+  box-shadow: var(--box-shadow);
+}
+
+.recent-transactions h2 {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.transaction-list {
+  list-style-type: none;
+}
+
+.transaction-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.transaction-item:last-child {
+  border-bottom: none;
+}
+
+.transaction-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.transaction-category {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.transaction-category.expense {
+  background-color: #f44336;
+}
+
+.transaction-category.income {
+  background-color: #4caf50;
+}
+
+.transaction-category.borrowed {
+  background-color: #9c27b0;
+}
+
+.transaction-category.lent {
+  background-color: #ff9800;
+}
+
+.transaction-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.transaction-title {
+  font-weight: 500;
+}
+
+.transaction-date {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.transaction-amount {
+  font-weight: 600;
+}
+
+.transaction-amount.expense {
+  color: #f44336;
+}
+
+.transaction-amount.income {
+  color: #4caf50;
+}
+
+.transaction-amount.borrowed {
+  color: #9c27b0;
+}
+
+.transaction-amount.lent {
+  color: #ff9800;
+}
+
+.view-all {
+  font-size: 0.9rem;
+  color: var(--primary-color);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+} 
